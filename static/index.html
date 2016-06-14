@@ -26,8 +26,33 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-
-
+        <script type="text/javascript">
+        adroll_adv_id = "B4WBOZRXZJCUNDX7DXWKFH";
+        adroll_pix_id = "ZJLTB6RO7VALNIBQURFRAE";
+        (function () {
+          var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window._adroll_loaded){_adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+              scr.setAttribute('async', 'true');
+              scr.type = "text/javascript";
+              scr.src = host + "/j/roundtrip.js";
+              ((document.getElementsByTagName('head') || null)[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+            };
+            if (window.addEventListener){window.addEventListener('load', _onload, false);}
+            else {window.attachEvent('onload', _onload)}
+        }());
+    </script>
+    <script>
+      function recordUser(){
+        try { 
+          __adroll.record_user({"adroll_segments": "15884d16"})
+        }
+        catch(err) { console.log(err); }
+      }
+  </script>
   </head>
 
   <body ng-controller="MainController">
@@ -117,7 +142,7 @@
     </main>
     <section class="section-get-started text-center" ng-show="showresultsvalue">
       <h1 class="text-xs-2">Index your app content today. Get started with Branch.</h1>
-        <a href="https://dashboard.branch.io?utm_campaign=Q216-Features-AppIndexing&utm_medium=CTA&utm_source=App%20Indexing%20Validator" class="new-button">Get Started</a>
+        <a href="https://dashboard.branch.io?utm_campaign=Q216-Features-AppIndexing&utm_medium=CTA&utm_source=App%20Indexing%20Validator" class="new-button" onclick="recordUser()">Get Started</a>
     </section>
     <script src="static/js/factories/DomainFactory.js"></script>
     <script src="static/js/controllers/MainController.js"></script>
