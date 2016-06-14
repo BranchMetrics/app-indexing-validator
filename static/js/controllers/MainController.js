@@ -32,7 +32,6 @@ module.controller('MainController', ['$scope', '$location', '$anchorScroll', 'Do
         else {
             domainFactory.testDomain($scope.domainInputVal, $scope.packageName, $scope.appStoreId)
                 .then(function(results) {
-                    console.log('MainController', results);
                     $scope.testResults = results.testResults;
                     $scope.showresultsvalue = true;
                 })
