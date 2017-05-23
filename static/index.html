@@ -26,34 +26,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-        <script type="text/javascript">
-        adroll_adv_id = "B4WBOZRXZJCUNDX7DXWKFH";
-        adroll_pix_id = "ZJLTB6RO7VALNIBQURFRAE";
-        (function () {
-          var _onload = function(){
-            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
-            if (!window._adroll_loaded){_adroll_loaded=true;setTimeout(_onload, 50);return}
-            var scr = document.createElement("script");
-            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-              scr.setAttribute('async', 'true');
-              scr.type = "text/javascript";
-              scr.src = host + "/j/roundtrip.js";
-              ((document.getElementsByTagName('head') || null)[0] ||
-                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-            };
-            if (window.addEventListener){window.addEventListener('load', _onload, false);}
-            else {window.attachEvent('onload', _onload)}
-        }());
-    </script>
-    <script>
-      function recordUser(){
-        try { 
-          __adroll.record_user({"adroll_segments": "15884d16"})
-        }
-        catch(err) { console.log(err); }
-      }
-  </script>
-  <script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
+    <script src="static/js/branchAttributionScripts.js"></script>
   </head>
 
   <body ng-controller="MainController">
@@ -104,7 +77,7 @@
       </div>
       <div class="container" id="resultsbox">
         <div class="alert {{ displayWebpage('summary', 'divClass') }}" ng-if="!isEmpty(testResults)">
-          <b>{{ displayWebpage('summary', 'message') }}</b><br><br> 
+          <b>{{ displayWebpage('summary', 'message') }}</b><br><br>
           <ul class="list-group"> <!-- webpage validation function-->
             <li hidden></li>
               <li class="list-group-item {{ displayWebpage('invalidAndroidScheme', 'listGroupItemClass') }}"> <b> {{ displayWebpage('invalidAndroidScheme', 'message') }} </b> </li>
@@ -148,14 +121,5 @@
     <script src="static/js/factories/DomainFactory.js"></script>
     <script src="static/js/controllers/MainController.js"></script>
     <script src="static/js/index.js"></script>
-    <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-     ga('create', 'UA-53307642-1', 'auto');
-     ga('send', 'pageview');
-    </script>
   </body>
 </html>
