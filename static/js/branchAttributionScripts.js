@@ -1,4 +1,4 @@
-// Munchkin
+/* Start Munchkin */
 (function() {
   var didInit = false;
   function initMunchkin() {
@@ -20,7 +20,9 @@
   document.getElementsByTagName('head')[0].appendChild(s);
 })();
 
-// Google Analytics
+/* End Munchkin */
+
+/* Start Google Analytics */
 
 // Cookie helper functions
 function getCookie(name) {
@@ -54,13 +56,15 @@ if (!returning_visitor) {
 
 ga('send', 'pageview');
 
-// Start LinkedIn Insight
+/* End Google Analytics */
+
+/* Start LinkedIn Insight */
 _linkedin_data_partner_id = "21211";
 (function()
 {var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);}
 )();
 
-// Bizible
+/* Start Bizible */
 var js = document.createElement("script");
 
 js.type = "text/javascript";
@@ -69,7 +73,9 @@ js.src = "//cdn.bizible.com/scripts/bizible.js";
 
 document.getElementsByTagName('head')[0].appendChild(js);
 
-// AdRoll
+/* End Bizible */
+
+/* Start AdRoll */
 adroll_adv_id = "B4WBOZRXZJCUNDX7DXWKFH";
 adroll_pix_id = "ZJLTB6RO7VALNIBQURFRAE";
 /* OPTIONAL: provide email to improve user identification */
@@ -97,7 +103,9 @@ function recordUser(){
   catch(err) { console.log(err); }
 }
 
-// FullStory
+/* End AdRoll */
+
+/* Start FullStory */
 window['_fs_debug'] = false;
 window['_fs_host'] = 'fullstory.com';
 window['_fs_org'] = '4PCGY';
@@ -114,8 +122,20 @@ window['_fs_namespace'] = 'FS';
     ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
 })(window,document,window['_fs_namespace'],'script','user');
 
-// Demandbase
+/* End FullStory */
+
+/* Demandbase */
 (function(d,b,a,s,e){ var t = b.createElement(a),
   fs = b.getElementsByTagName(a)[0]; t.async=1; t.id=e; t.src=s;
   fs.parentNode.insertBefore(t, fs); })
 (window,document,'script','https://scripts.demandbase.com/ucA8pUay.min.js','demandbase_js_lib');
+
+/* End Demandbase */
+
+/* Start Quora */
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '247e840cafa44cae9ac4b50a0cc1965a');
+qp('track', 'ViewContent');
+</script>
+/* End Quora */
