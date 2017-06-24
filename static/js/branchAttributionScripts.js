@@ -133,9 +133,7 @@ window['_fs_namespace'] = 'FS';
 /* End Demandbase */
 
 /* Start Quora */
-<script>
 !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
 qp('init', '247e840cafa44cae9ac4b50a0cc1965a');
 qp('track', 'ViewContent');
-</script>
 /* End Quora */
