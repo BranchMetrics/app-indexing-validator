@@ -1,3 +1,7 @@
+## Deprecated ##
+
+This service is killed as of Jan 11, 2023 in [INFRA-7549](https://branch.atlassian.net/browse/INFRA-7549).
+
 ##See how your App is indexed with the [App Indexing Validator](https://branch.io/resources/app-indexing/)##
 
 Currently, organic traffic is a huge source of traffic on websites, and as the mobile sphere grows, apps are trying to imitate this. App Indexing will likely become a very valuable source of traffic for developers. As such, at Branch we've had a lot of interest in determining this metric from apps and partners across the board. To name just a few benefits, app indexing can:
